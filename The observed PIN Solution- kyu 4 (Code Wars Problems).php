@@ -53,7 +53,7 @@ function getPINs($observed) {
       $var = [];
 //second loop iterates on the possible numbers which are exchanged with the observed numbers
       foreach($possible_numbers[$digits] as $pin){
-// third iterates on the solution or the result
+// third iterates on the var to store the values in it
           foreach($result as $res){
             $var[] = $res . $pin;
         }
