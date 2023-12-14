@@ -29,7 +29,7 @@ function getPINs($observed) {
 //creating a list contains the observed pin's 
   $list = str_split($observed);
 
-// empty list contains empty string to store the result on
+// empty list contains empty string to store the result in
   $result = [""];
 
 // this list is about all the possible numbers that can be exchanged to another number as mentioned in the problem 
