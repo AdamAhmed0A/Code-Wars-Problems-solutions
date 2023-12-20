@@ -25,14 +25,15 @@ Detective, we are counting on you!
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////SOLUTION STRTING FROM HERE WITH EXPLAINATION//////////////////////////////
+<?php
 function getPINs($observed) {
-//creating a list contains the observed pin's 
+  //creating a list contains the observed pin's 
   $list = str_split($observed);
 
-// empty list contains empty string to store the result in
+  // empty list contains empty string to store the result in
   $result = [""];
 
-// this list is about all the possible numbers that can be exchanged to another number as mentioned in the problem 
+  // this list is about all the possible numbers that can be exchanged to another number as mentioned in the problem 
   $possible_numbers = [
     '0' => ['0', '8'],
     '1' => ['1', '2', '4'],
@@ -46,20 +47,18 @@ function getPINs($observed) {
     '9' => ['6', '8', '9'],
   ];
 
-// the first loop iterates on the list as digit
-    foreach($list as $digits){
+  // the first loop iterates on the list as digit
+  foreach ($list as $digits) {
 
-// creating an empty list to store the variations or the exchanged numbers on it, follow the solution.....
-      $var = [];
-//second loop iterates on the possible numbers which are exchanged with the observed numbers
-      foreach($possible_numbers[$digits] as $pin){
-// third iterates on the var to store the values in it
-          foreach($result as $res){
-            $var[] = $res . $pin;
-        }
-      }
-// to print the result 
-      $result = $var;
+    // creating an empty list to store the variations or the exchanged numbers on it, follow the solution.....
+    $var = [];
+    //second loop iterates on the possible numbers which are exchanged with the observed numbers
+    foreach ($possible_numbers[$digits] as $pin) {
+      // third iterates on the var to store the values in it
+      foreach ($result as $res) $var[] = $res . $pin;
     }
+    // to print the result 
+    $result = $var;
+  }
   return $result;
 }

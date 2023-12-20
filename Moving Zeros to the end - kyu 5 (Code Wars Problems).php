@@ -4,9 +4,8 @@ moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 
 
 /////////////////////////////////////////////////////
-
-function moveZeros(array $items): array
-{ 
+<?php
+function moveZeros(array $items): array {
     // list 
     $zeroList = [];
     $nonZeroList = [];

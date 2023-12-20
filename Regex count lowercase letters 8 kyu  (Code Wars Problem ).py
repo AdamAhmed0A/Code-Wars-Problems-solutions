@@ -1,5 +1,5 @@
-def lowercase_count(strng):
+def lowercase_count(str):
     count = 0
-    for a in strng: 
+    for a in str: 
         if a.islower(): count += 1
     return count
