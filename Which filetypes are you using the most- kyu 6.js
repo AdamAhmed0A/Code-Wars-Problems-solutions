@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/5c7254fcaccda64d01907710/train/javascript
+// https://www.codewars.com/kata/5c7254fcaccda64d01907710/train/javascript
 ////////////////////////////////////////////////
 function solve(files) {
     let counts = {};
