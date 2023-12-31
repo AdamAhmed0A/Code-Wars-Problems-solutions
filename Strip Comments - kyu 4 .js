@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/javascript
+// https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/javascript
 ////////////////////////////////////////////////
 function solution(input, markers) {
     let lines = input.split("\n");

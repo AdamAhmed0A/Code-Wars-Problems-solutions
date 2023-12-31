@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/557f6437bf8dcdd135000010/train/javascript
+// https://www.codewars.com/kata/557f6437bf8dcdd135000010/train/javascript
 //////////////////////////////////////
 function factorial(n) {
     if (n < 0) {
