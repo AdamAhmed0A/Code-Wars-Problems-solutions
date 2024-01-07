@@ -1,5 +1,4 @@
 <?php
-
 function fib($n, &$memo = []) {
     if ($n >= 0 && $n <= 2) return 1;
     if (!empty($memo[$n])) return $memo[$n];
@@ -24,3 +23,17 @@ function productFib($n) {
 }
 
 var_export(productFib(800));
+
+<----- Another Solution By Frisky ----->
+    function productFib($prod) {
+    if ($prod < 0) return [];
+    $num1 = 0;
+    $num2 = 1;
+    
+    while($num1 * $num2 < $prod){
+        $temp = $num1 + $num2;
+        $num1 = $num2;
+        $num2 = $temp;
+    }
+     return [$num1, $num2, $num1 * $num2 === $prod];
+}
