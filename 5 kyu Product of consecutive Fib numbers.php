@@ -1,4 +1,4 @@
-<?php
+
 function fib($n, &$memo = []) {
     if ($n >= 0 && $n <= 2) return 1;
     if (!empty($memo[$n])) return $memo[$n];
@@ -24,7 +24,7 @@ function productFib($n) {
 
 var_export(productFib(800));
 
-<----- Another Solution By Frisky ----->
+<!----- Another Solution By Frisky ----->
     function productFib($prod) {
     if ($prod < 0) return [];
     $num1 = 0;
