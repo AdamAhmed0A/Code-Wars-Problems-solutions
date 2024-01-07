@@ -22,18 +22,19 @@ function productFib($n) {
     return array_merge($res, [false]);
 }
 
-var_export(productFib(800));
-
-<!----- Another Solution By Frisky ----->
-    function productFib($prod) {
+// Another Solution By Frisky 
+function productFib2($prod) {
     if ($prod < 0) return [];
     $num1 = 0;
     $num2 = 1;
-    
-    while($num1 * $num2 < $prod){
+
+    while ($num1 * $num2 < $prod) {
         $temp = $num1 + $num2;
         $num1 = $num2;
         $num2 = $temp;
     }
-     return [$num1, $num2, $num1 * $num2 === $prod];
+    return [$num1, $num2, $num1 * $num2 === $prod];
 }
+
+var_export(productFib(800));
+var_export(productFib2(800));
