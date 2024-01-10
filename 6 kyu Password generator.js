@@ -1,4 +1,22 @@
 function passwordGen() {
+    let length = Math.floor(Math.random() * 15 + 6)
+    let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    
+    let generate_password = Array.from({length}, () => chars[Math.floor(Math.random() * chars.length)]).join('')
+    
+    let upperRegex = /[A-Z]/
+    let lowerRegex = /[a-z]/
+    let numbersRegex = /[0-9]/
+    if(!upperRegex.test(generate_password) || !lowerRegex.test(generate_password) || !numbersRegex.test(generate_password)){
+        return passwordGen()
+    }
+    return generate_password
+}
+
+console.log(passwordGen());
+ 
+/// Another Solution ///
+function passwordGen() {
     let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let res = "";
     let length = Math.floor(Math.random() * 15 + 6);
