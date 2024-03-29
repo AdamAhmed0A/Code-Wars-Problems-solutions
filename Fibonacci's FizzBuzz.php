@@ -1,5 +1,5 @@
 <!-- https://www.codewars.com/kata/57bf599f102a39bb1e000ae5/train/php -->
-////////////////////////////////////////
+
 <?php
 function fibs_fizz_buzz($n) {
     if ($n < 0) return [];
