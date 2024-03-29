@@ -14,7 +14,7 @@ function passwordGen() {
 }
 
 console.log(passwordGen());
- 
+
 /// Another Solution ///
 function passwordGen() {
     let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
